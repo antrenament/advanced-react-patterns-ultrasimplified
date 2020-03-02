@@ -20,8 +20,6 @@ const StyledContainer = styled.div`
 
 const App = () => {
   const isMediumOrLarger = useMediaQuery({ minWidth: SCREEN_SIZES.md })
-
-  // toggle sidebar display
   const [showSidebar, setShowSidebar] = useState(false)
   const isSidebarShown = isMediumOrLarger || (!isMediumOrLarger && showSidebar)
 
